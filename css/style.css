@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root { 
+  --text-color: #000;
+  --light-text-color: #a5a5a5; 
+}
+ 
+.container {
+  width: 600px;
+} 
+ 
+.result { 
+  min-height: 200px;
+  padding: 10px;
+  border: 1px solid var(--light-text-color); 
+  font-size: 18px;
+  font-weight: 500; 
+  color: var(--text-color);
+}

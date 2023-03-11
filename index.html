@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Speech to Text | UNA</title>
+
+  <meta charset="UTF-8" />  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-primary-subtle mt-5">
+  <main class="container bg-light p-3 rounded-4 shadow-lg">
+    <h1 class="mt-3 text-center mb-4">Speech to Text</h1>
+
+    <div name="row-select" class="row mx-auto">
+      <select name="input-language" id="language" class="col form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+      </select>
+    </div>
+
+    <div name="row-button-start" class="row mx-auto">
+      <button id="start-record" class="col btn btn-primary record">
+        <div class="icon">
+          <ion-icon name="mic-outline"></ion-icon>
+        </div>
+        <span>Start Listening</span>
+      </button>
+
+      <button id="stop-record" class="col btn btn-success record d-none">
+        <span>Listening...</span>
+      </button>
+    </div>
+
+    <div name="row-result" class="row mx-auto">
+      <h2 class="col-12 mt-4 mb-4">Result :</h2>
+      <section class="col-12 result rounded-2 mb-4" spellcheck="false">
+
+        <span id="final" class="text-dark"></span>
+        <span id="interim" class="text-muted"></span>
+      </section>
+    </div>
+
+    <div name="row-footer-buttons" class="row mx-auto"> 
+        <button class="col-5 btn btn-outline-danger btn-lg clear  ">
+          <ion-icon name="trash-outline"></ion-icon>
+          <p>Clear</p>
+        </button>
+        <button class="col-5 offset-2 btn btn-outline-secondary btn-lg download  " disabled>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <p>Download</p>
+        </button> 
+    </div>
+
+  </main>
+  <footer name="row-footer" class="row text-center mt-5">
+    <p class="col">Programación IV, Universidad Nacional de Costa Rica 2023.</p>
+  </footer>
+ 
+  <script src="js/languages.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
